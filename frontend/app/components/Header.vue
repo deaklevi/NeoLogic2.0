@@ -17,7 +17,7 @@ const toggleMenu = () => {
 </script>
 
 <template>
-    <header class="w-full relative fixed top-0 left-0 z-50 bg-white shadow">
+    <header class="fixed top-0 left-0 w-full z-[100] bg-white/80 backdrop-blur-md shadow-sm">
         <nav class="max-w-7xl flex mx-auto items-center justify-between p-4">
             
             <h1 class="text-xl font-bold relative z-50">

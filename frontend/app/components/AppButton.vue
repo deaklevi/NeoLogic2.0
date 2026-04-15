@@ -2,7 +2,7 @@
 defineProps({
     text: {
         type: String,
-    }
+    },
 })
 </script>
 
