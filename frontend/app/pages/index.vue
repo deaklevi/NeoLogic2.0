@@ -2,6 +2,7 @@
 import GrowthSection from '~/components/GrowthSection.vue';
 import References from '~/components/References.vue';
 import ServiceCards from '~/components/ServiceCards.vue';
+import TechStack from '~/components/TechStack.vue';
 import TimeLine from '~/components/TimeLine.vue';
 
 </script>
@@ -15,5 +16,7 @@ import TimeLine from '~/components/TimeLine.vue';
         <TimeLine />
 
         <GrowthSection />
+
+        <TechStack />
     </Layout>
 </template>
