@@ -9,7 +9,7 @@
             <a href="/"><span class="text-2xl font-extrabold text-white">NeoLogic</span></a>
           </div>
           <p class="text-slate-400 leading-relaxed max-w-sm">
-            Innovatív digitális megoldásokkal segítjük a vállalkozásokat a növekedésben és a technológiai fejlődésben.
+            Prémium digitális élményeket építünk, amelyek elősegítik az üzleti növekedést. Megbízható partnere a webfejlesztés kiválóságában.
           </p>
           <div class="flex items-center gap-4">
             <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
