@@ -64,7 +64,7 @@
       
 
         <div class="pt-20 w-full flex justify-center">
-          <AppButton text="Ajánlatot kérek" class="px-10 py-5 text-lg shadow-lg shadow-blue-200" />
+          <AppButton text="Személyre szabott megoldás"/>
         </div>
         
     </div>

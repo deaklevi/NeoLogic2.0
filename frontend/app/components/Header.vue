@@ -20,9 +20,11 @@ const toggleMenu = () => {
     <header class="fixed top-0 left-0 w-full z-[100] bg-white/80 backdrop-blur-md shadow-sm">
         <nav class="max-w-7xl flex mx-auto items-center justify-between p-4">
             
-            <h1 class="text-xl font-bold relative z-50">
-                <span class="text-blue-600">Neo</span>Logic
-            </h1>
+            <a href="/">
+                <h1 class="text-xl font-bold relative z-50">
+                    <span class="text-blue-600">Neo</span>Logic
+                </h1>
+            </a>
 
             <ul class="hidden md:flex justify-between gap-4 font-medium text-slate-500">
                 <li><a href="/" class="hover:text-blue-600 transition-colors">Szolgáltatások</a></li>

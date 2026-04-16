@@ -9,6 +9,7 @@ import TimeLine from '~/components/TimeLine.vue';
 
 <template>
     <Layout>
+
         <ServiceCards />
 
         <References />
@@ -18,5 +19,8 @@ import TimeLine from '~/components/TimeLine.vue';
         <GrowthSection />
 
         <TechStack />
+
+        <ContactForm />
+
     </Layout>
 </template>

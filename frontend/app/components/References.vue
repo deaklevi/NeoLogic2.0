@@ -75,7 +75,7 @@
             </div>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">TeamFlow SaaS</h3>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">BotanicBrothers</h3>
             <p class="text-slate-600 text-sm mb-6 line-clamp-2">
               Egy klasszikus portfolio modern és elegáns felülettel, amely tökéletesen bemutatja a szolgáltatásokat és referenciákat, valamint integrált blog szekcióval.
             </p>

@@ -48,16 +48,16 @@ import { ref } from 'vue'
 
 const techStack = ref([
   { name: 'Laravel', logo: 'https://cdn.worldvectorlogo.com/logos/laravel-2.svg' },
-  { name: 'Vue.js', logo: 'https://cdn.worldvectorlogo.com/logos/vue-9.svg' },
+  { name: 'Vue.js', logo: '/vue-logo.png' },
   { name: 'Tailwind', logo: 'https://cdn.worldvectorlogo.com/logos/tailwindcss.svg' },
   { name: 'Next.js', logo: 'https://cdn.worldvectorlogo.com/logos/next-js.svg' },
   { name: 'Nuxt.js', logo: 'https://cdn.worldvectorlogo.com/logos/nuxt-2.svg' },
-  { name: 'React', logo: 'https://cdn.worldvectorlogo.com/logos/react-2.svg' },
+  { name: 'React', logo: '/react-logo.png' },
   { name: 'React Native', logo: 'https://cdn.worldvectorlogo.com/logos/react-native-1.svg' },
   { name: 'Pinia', logo: 'https://pinia.vuejs.org/logo.svg' },
   { name: 'Node.js', logo: 'https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg' },
   { name: 'TypeScript', logo: 'https://cdn.worldvectorlogo.com/logos/typescript.svg' },
-  { name: 'PostgreSQL', logo: 'https://cdn.worldvectorlogo.com/logos/postgresql.svg' },
+  { name: 'PostgreSQL', logo: '/postgresql-logo.png' },
   { name: 'Docker', logo: 'https://cdn.worldvectorlogo.com/logos/docker-4.svg' },
 ])
 </script>
