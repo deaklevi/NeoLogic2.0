@@ -26,18 +26,18 @@ const toggleMenu = () => {
                 </h1>
             </a>
 
-            <ul class="hidden md:flex justify-between gap-4 font-medium text-slate-500">
-                <li><a href="/" class="hover:text-blue-600 transition-colors">Szolgáltatások</a></li>
+            <ul class="hidden lg:flex justify-between gap-4 font-medium text-slate-500">
+                <li><a href="/" class="hover:text-blue-600 transition-colors">Szolgáltatásaink</a></li>
                 <li><a href="/" class="hover:text-blue-600 transition-colors">Referenciák</a></li>
                 <li><a href="/" class="hover:text-blue-600 transition-colors">Folyamat</a></li>
-                <li><a href="/" class="hover:text-blue-600 transition-colors">Rólunk</a></li>
+                <li><a href="/" class="hover:text-blue-600 transition-colors">Növekedési stratégia</a></li>
                 <li><a href="/" class="hover:text-blue-600 transition-colors">Kapcsolat</a></li>
             </ul>
-            <AppButton class="md:block hidden" text="Árajánlatkérés" />
+            <AppButton class="lg:block hidden" text="Árajánlatkérés" />
 
             <button 
                 @click="toggleMenu" 
-                class="md:hidden relative z-50 flex flex-col justify-center items-center w-8 h-8 gap-1.5 focus:outline-none group"
+                class="lg:hidden relative z-50 flex flex-col justify-center items-center w-8 h-8 gap-1.5 focus:outline-none group"
             >
                 <span 
                     class="block w-6 h-0.5 bg-slate-800 rounded-full transition-all duration-300 ease-in-out"
@@ -55,14 +55,14 @@ const toggleMenu = () => {
         </nav>
 
         <div 
-            class="md:hidden fixed inset-0 w-full h-screen bg-slate-50 z-40 flex flex-col items-center justify-center transition-transform duration-500 ease-in-out"
+            class="lg:hidden fixed inset-0 w-full h-screen bg-slate-50 z-40 flex flex-col items-center justify-center transition-transform duration-500 ease-in-out"
             :class="isOpen ? 'translate-y-0' : '-translate-y-full'"
         >
             <ul class="flex flex-col items-center gap-8 text-2xl font-medium text-slate-800">
-                <li><a href="/" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Szolgáltatások</a></li>
+                <li><a href="/" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Szolgáltatásaink</a></li>
                 <li><a href="/" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Referenciák</a></li>
                 <li><a href="/" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Folyamat</a></li>
-                <li><a href="/" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Rólunk</a></li>
+                <li><a href="/" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Növekedési stratégia</a></li>
                 <li><a href="/" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Kapcsolat</a></li>
             </ul>
             
