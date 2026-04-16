@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 bg-white">
+  <section id="references" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 md:px-6">
       
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">

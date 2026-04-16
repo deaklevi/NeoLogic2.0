@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 bg-white overflow-hidden">
+  <section id="tachstacks" class="py-16 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 md:px-6 mb-10 text-center">
       <h2 class="text-blue-600 font-semibold uppercase tracking-wide text-sm">Technológiák</h2>
       <p class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2">Ezekkel a technológiákkal dolgozunk</p>

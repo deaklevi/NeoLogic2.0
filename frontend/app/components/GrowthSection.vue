@@ -1,5 +1,5 @@
 <template>
-  <section class="py-24 bg-white overflow-hidden">
+  <section id="growth" class="py-24 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 md:px-6">
       <div class="flex flex-col lg:flex-row gap-16 items-start">
         

@@ -6,7 +6,7 @@
         
         <div class="space-y-6">
           <div class="flex items-center gap-2">
-            <span class="text-2xl font-extrabold text-white">NeoLogic</span>
+            <a href="/"><span class="text-2xl font-extrabold text-white">NeoLogic</span></a>
           </div>
           <p class="text-slate-400 leading-relaxed max-w-sm">
             Innovatív digitális megoldásokkal segítjük a vállalkozásokat a növekedésben és a technológiai fejlődésben.

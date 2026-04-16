@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 bg-slate-50">
+  <section id="timeline" class="py-20 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 md:px-6">
       
       <div class="text-center mb-16">

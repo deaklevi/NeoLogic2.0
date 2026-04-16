@@ -23,9 +23,11 @@
           <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <AppButton text="Ingyenes konzultáció" class="px-8 py-4 text-lg" />
             
-            <button class="px-8 py-4 text-lg font-medium text-slate-700 hover:text-blue-600 hover:border-blue-600 transition-colors duration-300 border border-slate-300 rounded-md">
-              Írjon nekünk
-            </button>
+            <a href="#contact">
+              <button class="px-8 py-4 text-lg font-medium text-slate-700 hover:text-blue-600 hover:border-blue-600 transition-colors duration-300 border border-slate-300 rounded-md">
+                Írjon nekünk
+              </button>
+            </a>
           </div>
 
           <!--

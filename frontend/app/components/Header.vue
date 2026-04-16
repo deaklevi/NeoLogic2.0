@@ -27,13 +27,15 @@ const toggleMenu = () => {
             </a>
 
             <ul class="hidden lg:flex justify-between gap-4 font-medium text-slate-500">
-                <li><a href="/" class="hover:text-blue-600 transition-colors">Szolgáltatásaink</a></li>
-                <li><a href="/" class="hover:text-blue-600 transition-colors">Referenciák</a></li>
-                <li><a href="/" class="hover:text-blue-600 transition-colors">Folyamat</a></li>
-                <li><a href="/" class="hover:text-blue-600 transition-colors">Növekedési stratégia</a></li>
-                <li><a href="/" class="hover:text-blue-600 transition-colors">Kapcsolat</a></li>
+                <li><a href="#services" class="hover:text-blue-600 transition-colors">Szolgáltatásaink</a></li>
+                <li><a href="#references" class="hover:text-blue-600 transition-colors">Referenciák</a></li>
+                <li><a href="#timeline" class="hover:text-blue-600 transition-colors">Folyamat</a></li>
+                <li><a href="#growth" class="hover:text-blue-600 transition-colors">Növekedési stratégia</a></li>
+                <li><a href="#contact" class="hover:text-blue-600 transition-colors">Kapcsolat</a></li>
             </ul>
-            <AppButton class="lg:block hidden" text="Árajánlatkérés" />
+            <a href="#contact">
+                <AppButton class="lg:block hidden" text="Árajánlatkérés" />
+            </a>
 
             <button 
                 @click="toggleMenu" 
@@ -59,16 +61,18 @@ const toggleMenu = () => {
             :class="isOpen ? 'translate-y-0' : '-translate-y-full'"
         >
             <ul class="flex flex-col items-center gap-8 text-2xl font-medium text-slate-800">
-                <li><a href="/" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Szolgáltatásaink</a></li>
-                <li><a href="/" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Referenciák</a></li>
-                <li><a href="/" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Folyamat</a></li>
-                <li><a href="/" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Növekedési stratégia</a></li>
-                <li><a href="/" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Kapcsolat</a></li>
+                <li><a href="#services" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Szolgáltatásaink</a></li>
+                <li><a href="#references" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Referenciák</a></li>
+                <li><a href="#timeline" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Folyamat</a></li>
+                <li><a href="#growth" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Növekedési stratégia</a></li>
+                <li><a href="#contact" @click="toggleMenu" class="hover:text-blue-600 transition-colors">Kapcsolat</a></li>
             </ul>
             
-            <div class="mt-12">
-                <AppButton text="Árajánlatkérés" @click="toggleMenu" />
-            </div>
+            <a href="#contact">
+                <div class="mt-12">
+                    <AppButton text="Árajánlatkérés" @click="toggleMenu" />
+                </div>
+            </a>
         </div>
     </header>
 </template>
