@@ -21,6 +21,7 @@
                 placeholder="Kovács"
                 class="w-full px-5 py-4 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all"
                 required
+                :disabled="loading"
               />
             </div>
             <div class="space-y-2">
@@ -32,6 +33,7 @@
                 placeholder="István"
                 class="w-full px-5 py-4 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all"
                 required
+                :disabled="loading"
               />
             </div>
           </div>
@@ -46,6 +48,7 @@
                 placeholder="pelda@ceg.hu"
                 class="w-full px-5 py-4 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all"
                 required
+                :disabled="loading"
               />
             </div>
             <div class="space-y-2">
@@ -56,6 +59,7 @@
                 v-model="form.company"
                 placeholder="Pelda Kft."
                 class="w-full px-5 py-4 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all"
+                :disabled="loading"
               />
             </div>
           </div>
@@ -69,13 +73,15 @@
               placeholder="Miben segíthetünk? Kérjük, írja le röviden a projekt célját és elvárásait..."
               class="w-full px-5 py-4 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all resize-none"
               required
+              :disabled="loading"
             ></textarea>
           </div>
 
           <div class="flex justify-center pt-4">
             <AppButton 
               type="submit"
-              text="Projekt kérelem küldése"            
+              :text="loading ? 'Küldés folyamatban...' : 'Projekt kérelem küldése'"
+              :disabled="loading"
             >
             </AppButton>
           </div>
@@ -88,7 +94,7 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue'
+import { reactive, ref } from 'vue'
 
 const form = reactive({
   firstName: '',
@@ -98,15 +104,31 @@ const form = reactive({
   message: ''
 })
 
-const handleSubmit = () => {
-  console.log('Küldendő adatok:', form)
-  alert('Köszönjük! Az üzenetet megkaptuk, hamarosan jelentkezünk.')
-  
-  // Form ürítése küldés után
-  form.firstName = ''
-  form.lastName = ''
-  form.email = ''
-  form.company = ''
-  form.message = ''
+// Betöltési állapot, hogy a felhasználó lássa, hogy dolgozik a rendszer
+const loading = ref(false)
+
+// FONTOS: az async kulcsszó kell ide!
+const handleSubmit = async () => {
+  loading.value = true
+
+  try {
+    // Kérés küldése a Laravel backendnek
+    const response = await $fetch('http://127.0.0.1:8000/api/contact-send', {
+      method: 'POST',
+      body: form
+    })
+    
+    // Ha sikeres
+    alert('Köszönjük! Az üzenetet megkaptuk, hamarosan jelentkezünk.')
+    
+    // Form ürítése küldés után
+    Object.assign(form, { firstName: '', lastName: '', email: '', company: '', message: '' })
+
+  } catch (err) {
+    console.error('Küldési hiba:', err)
+    alert('Hiba történt a küldés során. Kérjük, ellenőrizze, hogy fut-e a szerver, vagy próbálja újra később!')
+  } finally {
+    loading.value = false
+  }
 }
 </script>
