@@ -13,7 +13,7 @@ export default defineNuxtConfig({
       ],
       meta: [
         { name: 'description', content: 'A NeoLogic valóra váltja céged digitális transzformációját. Kifinomult web fejlesztés, logikusan felépített design.' },
-        { name: 'keywords', content: 'szoftverfejlesztés, Vue.js, NeoLogic, digitális megoldások, weboldal készítés' },
+        { name: 'keywords', content: 'weboldal, NeoLogic, digitális fejlesztés, weboldal készítés' },
         { name: 'author', content: 'NeoLogic Team' },
         // Open Graph
         { property: 'og:type', content: 'website' },
