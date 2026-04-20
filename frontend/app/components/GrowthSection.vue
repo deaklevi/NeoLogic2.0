@@ -63,9 +63,11 @@
       </div>
       
 
+        <!--
         <div class="pt-20 w-full flex justify-center">
-          <AppButton text="Személyre szabott megoldás"/>
+          <AppButton text="Személyre szabott ajánlatkérés"/>
         </div>
+        -->
         
     </div>
   </section>
