@@ -1,20 +1,48 @@
-<div style="background: #0f0f0f; color: #ffffff; padding: 40px 20px; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #333; border-radius: 12px;">
-    <div style="text-align: center; margin-bottom: 40px;">
-        <div style="display: inline-block; padding: 10px 20px; border: 1px solid #F3A122; border-radius: 4px;">
-            <span style="color: #F3A122; font-weight: bold; font-size: 22px; letter-spacing: 3px; text-transform: uppercase;">NeoLogic</span>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+        .wrapper { width: 100%; table-layout: fixed; background-color: #ffffff; padding-bottom: 60px; }
+        .main { max-width: 600px; margin: 0 auto; padding: 40px 20px; }
+        .logo { font-size: 20px; font-weight: 700; color: #000000; letter-spacing: -0.02em; text-transform: uppercase; margin-bottom: 60px; }
+        .content h1 { font-size: 32px; font-weight: 700; color: #111827; margin-bottom: 24px; letter-spacing: -0.03em; }
+        .content p { font-size: 16px; line-height: 1.6; color: #4b5563; margin-bottom: 20px; }
+        .next-step { margin: 40px 0; padding-left: 20px; border-left: 2px solid #2563eb; }
+        .next-step h3 { font-size: 14px; font-weight: 600; color: #2563eb; text-transform: uppercase; margin: 0 0 8px 0; letter-spacing: 0.05em; }
+        .next-step p { margin: 0; font-size: 15px; color: #1f2937; }
+        .cta-button { display: inline-block; padding: 12px 24px; background-color: #000000; color: #ffffff !important; text-decoration: none; border-radius: 6px; font-size: 15px; font-weight: 500; margin-top: 20px; }
+        .footer { margin-top: 60px; padding-top: 30px; border-top: 1px solid #f3f4f6; color: #9ca3af; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="logo">NeoLogic</div>
+            
+            <div class="content">
+                <h1>Megkaptuk az üzenetét.</h1>
+                <p>Kedves {{ $formData['firstName'] }},</p>
+                <p>Köszönjük a megkeresését. Ezúton visszaigazoljuk, hogy rendszerünk sikeresen rögzítette a projektjével kapcsolatos adatokat.</p>
+                
+                <div class="next-step">
+                    <h3>Mi történik most?</h3>
+                    <p>Szakmai csapatunk áttekinti az információkat, és 24 órán belül felvesszük Önnel a kapcsolatot a megadott elérhetőségek egyikén.</p>
+                </div>
+
+                <p>Amíg várakozik, látogasson el weboldalunkra, ahol megtekintheti legutóbbi projektjeinket és megoldásainkat.</p>
+                
+                <a href="https://neologic.hu" class="cta-button">Weboldal megnyitása</a>
+            </div>
+
+            <div class="footer">
+                <strong>NeoLogic Csapata</strong><br>
+                Budapest, Magyarország<br>
+                <span style="font-size: 11px;">Ez egy automatikus rendszerüzenet.</span>
+            </div>
         </div>
     </div>
-
-    <div style="padding: 0 20px;">
-        <h2 style="font-weight: 300; font-size: 26px; margin-bottom: 20px;">Üdvözöljük, <span style="color: #F3A122;">{{ $formData['lastName'] }} {{ $formData['firstName'] }}</span>!</h2>
-        
-        <p style="line-height: 1.7; color: #ccc; font-size: 16px;">
-            Köszönjük, hogy megtisztelt minket bizalmával és felvette velünk a kapcsolatot.
-        </p>
-
-        <p style="font-size: 14px; color: #888; margin-bottom: 10px;">Az Ön által küldött üzenet:</p>
-        <div style="border-left: 2px solid #F3A122; padding-left: 20px; font-style: italic; color: #999; margin-bottom: 35px; line-height: 1.6;">
-            "{{ $formData['message'] }}"
-        </div>
-    </div>
-</div>
+</body>
+</html>
