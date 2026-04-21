@@ -44,8 +44,8 @@
         </div>
         -->
 
-        <a href="https://www.palasti.hu/" target="bank">
-          <div class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500">
+        <a href="https://www.palasti.hu/" target="bank" class="h-full">
+          <div class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-full">
             <div class="relative overflow-hidden h-52">
               <img 
                 src="/PalastiEsTarsaKft.jpg" 
@@ -53,24 +53,24 @@
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <span class="text-white text-sm font-medium">Dashboard</span>
+                <span class="text-white text-sm font-medium">Galléria</span>
               </div>
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">Palásti és Társa kft.</h3>
               <p class="text-slate-600 text-sm mb-6 line-clamp-2">
-                Az oldalon található elemek szerkesztése és valós idejű frissítése dashboardal.
+                Egy galléria oldal, amely bemutatja a cég szolgáltatásait és referenciáit.
               </p>
               <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-green-100 text-slate-600 text-xs font-semibold rounded-full">Vue.js</span>
+                <span class="px-3 py-1 bg-green-100 text-slate-600 text-xs font-semibold rounded-full">Nuxt.js</span>
                 <span class="px-3 py-1 bg-red-100 text-slate-600 text-xs font-semibold rounded-full">Laravel</span>
               </div>
             </div>
           </div>
         </a>
 
-        <a href="https://www.botanicbrothers.hu/" target="bank">
-          <div class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500">
+        <a href="https://www.botanicbrothers.hu/" target="bank" class="h-full">
+          <div class="group bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-full">
             <div class="relative overflow-hidden h-52">
               <img 
                 src="/Gardener.jpg" 
@@ -78,16 +78,17 @@
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <span class="text-white text-sm font-medium">Portfolio</span>
+                <span class="text-white text-sm font-medium">Landing page</span>
               </div>
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">BotanicBrothers</h3>
               <p class="text-slate-600 text-sm mb-6 line-clamp-2">
-                Egy klasszikus portfolio modern és elegáns felülettel, amely tökéletesen bemutatja a szolgáltatásokat és referenciákat, valamint integrált blog szekcióval.
+                Egy landinfg page, amely bemutatja a szolgáltatásokat és referenciákat.
               </p>
               <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-green-100 text-slate-600 text-xs font-semibold rounded-full">Nuxt</span>
+                <span class="px-3 py-1 bg-green-100 text-slate-600 text-xs font-semibold rounded-full">Nuxt.js</span>
+                <span class="px-3 py-1 bg-red-100 text-slate-600 text-xs font-semibold rounded-full">Laravel</span>
               </div>
             </div>
           </div>
