@@ -53,13 +53,13 @@
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <span class="text-white text-sm font-medium">Galléria</span>
+                <span class="text-white text-sm font-medium">Galéria</span>
               </div>
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">Palásti és Társa kft.</h3>
               <p class="text-slate-600 text-sm mb-6 line-clamp-2">
-                Egy galléria oldal, amely bemutatja a cég szolgáltatásait és referenciáit.
+                Egy galéria oldal, amely bemutatja a cég szolgáltatásait és referenciáit.
               </p>
               <div class="flex flex-wrap gap-2">
                 <span class="px-3 py-1 bg-green-100 text-slate-600 text-xs font-semibold rounded-full">Nuxt.js</span>
@@ -84,7 +84,7 @@
             <div class="p-6">
               <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">BotanicBrothers</h3>
               <p class="text-slate-600 text-sm mb-6 line-clamp-2">
-                Egy landinfg page, amely bemutatja a szolgáltatásokat és referenciákat.
+                Egy landing page, amely bemutatja a szolgáltatásokat és referenciákat.
               </p>
               <div class="flex flex-wrap gap-2">
                 <span class="px-3 py-1 bg-green-100 text-slate-600 text-xs font-semibold rounded-full">Nuxt.js</span>
